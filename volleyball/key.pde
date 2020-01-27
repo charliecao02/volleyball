@@ -26,3 +26,13 @@ void keyReleased() {
   if (keyCode == LEFT) left=false;
   if (keyCode == RIGHT) right=false;
 }
+
+void mouseClicked() {
+  if (mode==0 && mouseX>=100 && mouseX<=400 && mouseY>=360 && mouseY<=440) mode=1; 
+  if (mode==2 && mouseX>=425 && mouseX<=575 && mouseY>=425 && mouseY<=475) {
+    mode=0;
+    lscore=0;
+    rscore=0;
+    reset();
+  }
+}

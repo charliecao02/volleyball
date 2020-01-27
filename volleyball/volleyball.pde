@@ -10,7 +10,7 @@ boolean up, down, left, right;
 boolean w, a, s, d;
 
 int lscore=0, rscore=0;
-int lastscore=2;
+int lastscore=2, winner=0;
 int mode=0;
 
 FWorld world;
